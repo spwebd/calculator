@@ -1,17 +1,17 @@
 function calculator (){
-     let add = document.getElementById("add")
-     let subtract = document.getElementById("subtract")
-     let multiply = document.getElementById("multiply")
-     let divide = document.getElementById("divide")
-     let equals = document.getElementById("equals")
-     let clear = document.getElementById("clear")
+     let add = document.getElementById("add");
+     let subtract = document.getElementById("subtract");
+     let multiply = document.getElementById("multiply");
+     let divide = document.getElementById("divide");
+     let equals = document.getElementById("equals");
+     let clear = document.getElementById("clear");
      let result = 0
      let operation = ""
 
 function doOperation () {
-  let number = document.getElementById("number").value
-  number = parseInt(number)
-  document.getElementById("number").value = ""
+  let number = document.getElementById("number").value;
+  number = parseInt(number);
+  document.getElementById("number").value = "";
 
 
   // check if any operation has been selected 
@@ -25,15 +25,15 @@ function doOperation () {
   }
 
   if (operation == "subtract") {
-    result = result - number 
+    result = result - number
 }
 
   if (operation == "multiply") {
-    result = result * number 
+    result = result * number
   }
 
   if (operation == "divide") {
-    result = result / number 
+    result = result / number
   }
 
 
@@ -43,37 +43,37 @@ function doOperation () {
 
   add.onclick = function (){
     doOperation()
-    operation = "add"
+    operation = "add";
 
   }
 
   subtract.onclick = function (){
     doOperation()
-    operation = "subtract"
+    operation = "subtract";
 
   }
 
   divide.onclick = function (){
     doOperation()
-    operation = "divide"
+    operation = "divide";
 
   }
 
   multiply.onclick = function (){
     doOperation()
-    operation = "multiply"
+    operation = "multiply";
 
   }
 
 equals.onclick = function (){
     doOperation()
-    document.getElementById("number").value = result
+    document.getElementById("number").value = result;
 }
 
 
   clear.onclick = function (){
-    document.getElementById("number").value = ""
-    result = 0
+    document.getElementById("number").value = "";
+    result = 0;
 
   }
 
